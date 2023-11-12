@@ -1,0 +1,135 @@
+/* Start Normal Size */
+body {
+	height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.20) 25%, rgba(0, 0, 0, 0.30) 100%), url("../img/login-back.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.form-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #f2f2f2;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 20px;
+}
+
+form {
+	width: 100%;
+}
+
+.form-box__title {
+	text-align: center;
+	display: block;
+	font-weight: 600;
+	font-size: 1.1rem;
+}
+
+.form-box__input-box {
+	position: relative;
+	height: 40px;
+	margin: 15px 0;
+	border-radius: 20px;
+	overflow: hidden;
+	backdrop-filter: blur(10px);
+	display: flex;
+	align-items: center;
+	background: #ffffff0a;
+	padding: 0 15px;
+}
+
+.form-box__input-box input,
+.form-box__input-box span {
+	color: white;
+}
+
+.form-box__input-box input {
+	width: 100%;
+	height: 100%;
+	background: none;
+}
+
+.form-box__input-box span {
+	position: absolute;
+	line-height: 15px;
+	right: 15px;
+}
+
+.form-box button {
+	background: none;
+	border: 1px solid #f2f2f2;
+	width: 100%;
+	padding: 7px 0;
+	border-radius: 20px;
+	color: #f2f2f2;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.form-box button:disabled {
+	background: white;
+	color: black;
+	opacity: 0.5;
+}
+
+.form-box button:hover{
+	background: #f2f2f2;
+	color: black;
+}
+/* End Normal Size */
+@media screen and (min-width: 320px) {
+	.form-box {
+		width: 325px;
+		height: 325px;
+	}
+
+	.form-box__title {
+		font-size: 1.3rem;
+	}
+
+	.form-box__input-box {
+		height: 43px;
+		backdrop-filter: blur(5px);
+		background-color: #ffffff30;
+	}
+
+	.form-box button {
+		padding: 10px 0;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.form-box {
+		width: 450px;
+		height: 325px;
+	}
+
+	.form-box__title {
+		font-size: 1.7rem;
+	}
+
+	.form-box__input-box {
+		height: 50px;
+	}
+
+	.form-box__input-box input {
+		font-size: 1rem;
+	}
+
+	.form-box__input-box span {
+		font-size: 1.2rem;
+	}
+
+	.form-box button {
+		height: 50px;
+		padding: 0;
+		line-height: 50px;
+	}
+}

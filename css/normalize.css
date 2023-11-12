@@ -1,0 +1,130 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+
+body {
+	overflow: hidden;
+}
+
+.message {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	z-index: 100;
+	background-color: white;
+	padding: 13px;
+	display: flex;
+	align-items: center;
+	width: 275px;
+	user-select: none;
+	border-left: 5px solid white;
+	transform: translateX(calc(100% + 25px));
+	transition: 0.2s;
+}
+
+.message--success .message__symbol {
+	color: green;
+} .message--success {
+	border-color: green;
+} .message--success .progressbar {
+	background-color: green;
+}
+
+.message--warning .message__symbol {
+	color: gold;
+} .message--warning {
+	border-color: gold;
+} .message--warning .progressbar {
+	background-color: gold;
+}
+
+.message--error .message__symbol {
+	color: red;
+} .message--error {
+	border-color: red;
+} .message--error .progressbar {
+	background-color: red;
+}
+
+.message--info .message__symbol {
+	color: blue;
+} .message--info {
+	border-color: blue;
+} .message--info .progressbar {
+	background-color: blue;
+}
+
+.message__symbol ion-icon {
+	font-size: 1.3rem;
+	margin-right: 15px;
+}
+
+.message__content {
+	display: flex;
+	flex-direction: column;
+}
+
+.text {
+	font-weight: 400;
+	font-size: 15px;
+	color: #737373;
+}
+
+.text1 {
+	font-size: 16px;
+	color: #424242;
+	font-weight: 600;
+}
+
+.message__close {
+	position: absolute;
+	top: 10px;
+	right: 13px;
+	opacity: 0.5;
+	transition: 0.1s;
+	cursor: pointer;
+}
+
+.message__close:hover {
+	opacity: 1;
+}
+
+.message__progress {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	background: #f2f2f2;
+	border-radius: 20px;
+}
+
+.message.show .message__progress .progressbar {
+	animation: zeroProgressbar;
+	animation-duration: 5s;
+}
+
+.message.show {
+	transform: translateX(0);
+}
+
+@keyframes zeroProgressbar {
+	0% {
+		width: 100%;
+	}
+
+	100% {
+		width: 0%;
+	}
+}
+
+.progressbar {
+	width: 0;
+	height: 100%;
+}
