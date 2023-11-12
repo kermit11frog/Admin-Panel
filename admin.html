@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Admin - Dashboard</title>
+		<!-- meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, scale=1.0">
+		<!-- links -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/admin.css">
+	</head>
+	<body>
+		<div class="sidebar">
+			<div class="sidebar__logo">
+				<div class="logo__icon">
+					<img src="img/logo.png" draggable='false'>
+				</div>
+				<span class="logo__title">
+					Brand Name
+				</span>
+			</div>
+			<ul class="sidebar__links">
+				<li class="active">
+					<a href="#">
+						<ion-icon name="grid-outline"></ion-icon>
+						<span>Dashboard</span>
+					</a>
+					<span class="when_close">Dashboard</span>
+				</li>
+				<li>
+					<a href="#">
+						<ion-icon name="bar-chart-outline"></ion-icon>
+						<span>Analitycs</span>
+					</a>
+					<span class="when_close">Analitycs</span>
+				</li>
+				<li>
+					<a href="#">
+						<ion-icon name="bookmark-outline"></ion-icon>
+						<span>Collections</span>
+					</a>
+					<span class="when_close">Collections</span>
+				</li>
+				<li>
+					<a href="#">
+						<ion-icon name="people-outline"></ion-icon>
+						<span>Users</span>
+					</a>
+					<span class="when_close">Users</span>
+				</li>
+				<li>
+					<a href="#">
+						<ion-icon name="paper-plane-outline"></ion-icon>
+						<span>Posts</span>
+					</a>
+					<span class="when_close">Posts</span>
+				</li>
+				<li>
+					<a href="#">
+						<ion-icon name="chatbubbles-outline"></ion-icon>
+						<span>Messages</span>
+					</a>
+					<span class="when_close">Messages</span>
+				</li>
+			</ul>
+			<ul class="sidebar__links sidebar__links--bottom">
+				<li>
+					<a href="#">
+						<ion-icon name="person-circle-outline"></ion-icon>
+						<span>Account</span>
+					</a>
+					<span class="when_close">Account</span>
+				</li>
+				<li>
+					<a href="#" id="logout">
+						<ion-icon name="log-out-outline"></ion-icon>
+						<span>Logout</span>
+					</a>
+					<span class="when_close">Logout</span>
+				</li>
+			</ul>
+		</div>
+		<div class="dark-background"></div>
+		<main>
+			<div class="main__header">
+				<div class="header__nav">
+					<ion-icon name="menu-outline" id="close-side-btn"></ion-icon>
+					<span class="msg">
+						welcome back <span> </span>
+					</span>
+					<div class="buttons">
+						<a href="#">
+							<ion-icon name="pencil-outline"></ion-icon>
+							<span>Edit</span>
+						</a>
+						<a href="#">
+							<ion-icon name="add-outline"></ion-icon>
+							<span>Create</span>
+						</a>
+						<a href="#">
+							<ion-icon name="cog-outline"></ion-icon>
+							<span>Manage</span>
+						</a>
+					</div>
+				</div>
+				<div class="header__content_links">
+					<span class="active">All files</span>
+					<span>Shared</span>
+					<span>File requests</span>
+				</div>
+			</div>
+			<div class="main__content">
+				<div class="main__row">
+					<div class="box">
+						<div class="box-content">
+							<span class="box-title">Budget</span>
+							<span class="box-value">$11590</span>
+							<div class="box-bottom">
+								<div class="percent">
+									<ion-icon name="arrow-up-outline"></ion-icon>
+									<span>37%</span>
+								</div>
+								<span>Since last month</span>
+							</div>
+						</div>
+						<ion-icon name="card-outline"></ion-icon>
+					</div>
+					<div class="box">
+						<div class="box-content">
+							<span class="box-title">New Projects</span>
+							<span class="box-value">320</span>
+							<div class="box-bottom">
+								<div class="percent">
+									<span><ion-icon name="arrow-up-outline"></ion-icon></span>
+									<span>80%</span>
+								</div>
+								<span>Since last month</span>
+							</div>
+						</div>
+						<ion-icon name="people-outline"></ion-icon>
+					</div>
+					<div class="box">
+						<div class="box-content">
+							<span class="box-title">Total hours</span>
+							<span class="box-value">4.100</span>
+							<div class="box-bottom">
+								<div class="percent percent--negative">
+									<span><ion-icon name="arrow-down-outline"></ion-icon></span>
+									<span>-5%</span>
+								</div>
+								<span>Since last month</span>
+							</div>
+						</div>
+						<ion-icon name="time-outline"></ion-icon>
+					</div>
+					<div class="box">
+						<div class="box-content">
+							<span class="box-title">Work load</span>
+							<span class="box-value">88%</span>
+							<div class="box-bottom">
+								<div class="percent">
+									<ion-icon name="arrow-up-outline"></ion-icon>
+									<span>10%</span>
+								</div>
+								<span>Since last month</span>
+							</div>
+						</div>
+						<ion-icon name="basket-outline"></ion-icon>
+					</div>
+				</div>
+				<div class="main-row table">
+					<div class="table__header">
+						<span>Applications</span>
+					</div>
+					<div class="table__body">
+											<table class="table__body">
+						<thead>
+							<tr>
+								<th>name</th>
+								<th>date</th>
+								<th>company</th>
+								<th>offer</th>
+								<th colspan="2">meeting</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="name">
+									<div class="user-picture">
+										<img src="img/img.png">
+									</div>
+									<span class="username">kermitfrog123</span>
+								</td>
+								<td class="date">
+									<span>Feb 15, 2023</span>
+								</td>
+								<td class="company">
+									<div class="company-picture">
+										<img src="img/figma.png">
+									</div>
+									<span>Figma</span>
+								</td>
+								<td class="offer">
+									<span>$3.500</span>
+								</td>
+								<td class="meeting gree">
+									<span>Scheduled</span>
+								</td>
+								<td class="buttons">
+									<button>View</button>
+									<button><ion-icon name="trash-outline"></ion-icon></button>
+								</td>
+							</tr>
+							<tr>
+								<td class="name">
+									<div class="user-picture">
+										<img src="img/img.png">
+									</div>
+									<span class="username">kermitfrog123</span>
+								</td>
+								<td class="date">
+									<span>Feb 15, 2023</span>
+								</td>
+								<td class="company">
+									<div class="company-picture">
+										<img src="img/figma.png">
+									</div>
+									<span>Figma</span>
+								</td>
+								<td class="offer">
+									<span>$3.500</span>
+								</td>
+								<td class="meeting ora">
+									<span>Postponed</span>
+								</td>
+								<td class="buttons">
+									<button>View</button>
+									<button><ion-icon name="trash-outline"></ion-icon></button>
+								</td>
+							</tr>
+							<tr>
+								<td class="name">
+									<div class="user-picture">
+										<img src="img/img.png">
+									</div>
+									<span class="username">kermitfrog123</span>
+								</td>
+								<td class="date">
+									<span>Feb 15, 2023</span>
+								</td>
+								<td class="company">
+									<div class="company-picture">
+										<img src="img/figma.png">
+									</div>
+									<span>Figma</span>
+								</td>
+								<td class="offer">
+									<span>$3.500</span>
+								</td>
+								<td class="meeting gree">
+									<span>Scheduled</span>
+								</td>
+								<td class="buttons">
+									<button>View</button>
+									<button><ion-icon name="trash-outline"></ion-icon></button>
+								</td>
+							</tr>
+							<tr>
+								<td class="name">
+									<div class="user-picture">
+										<img src="img/img.png">
+									</div>
+									<span class="username">kermitfrog123</span>
+								</td>
+								<td class="date">
+									<span>Feb 15, 2023</span>
+								</td>
+								<td class="company">
+									<div class="company-picture">
+										<img src="img/figma.png">
+									</div>
+									<span>Figma</span>
+								</td>
+								<td class="offer">
+									<span>$3.500</span>
+								</td>
+								<td class="meeting bla">
+									<span>Not Discussed</span>
+								</td>
+								<td class="buttons">
+									<button>View</button>
+									<button><ion-icon name="trash-outline"></ion-icon></button>
+								</td>
+							</tr>
+							<tr>
+								<td class="name">
+									<div class="user-picture">
+										<img src="img/img.png">
+									</div>
+									<span class="username">kermitfrog123</span>
+								</td>
+								<td class="date">
+									<span>Feb 15, 2023</span>
+								</td>
+								<td class="company">
+									<div class="company-picture">
+										<img src="img/figma.png">
+									</div>
+									<span>Figma</span>
+								</td>
+								<td class="offer">
+									<span>$3.500</span>
+								</td>
+								<td class="meeting red">
+									<span>Canceled</span>
+								</td>
+								<td class="buttons">
+									<button>View</button>
+									<button><ion-icon name="trash-outline"></ion-icon></button>
+								</td>
+							</tr>
+							<tr>
+								<td class="name">
+									<div class="user-picture">
+										<img src="img/img.png">
+									</div>
+									<span class="username">kermitfrog123</span>
+								</td>
+								<td class="date">
+									<span>Feb 15, 2023</span>
+								</td>
+								<td class="company">
+									<div class="company-picture">
+										<img src="img/figma.png">
+									</div>
+									<span>Figma</span>
+								</td>
+								<td class="offer">
+									<span>$3.500</span>
+								</td>
+								<td class="meeting gree">
+									<span>Scheduled</span>
+								</td>
+								<td class="buttons">
+									<button>View</button>
+									<button><ion-icon name="trash-outline"></ion-icon></button>
+								</td>
+							</tr>
+							<tr>
+								<td class="name">
+									<div class="user-picture">
+										<img src="img/img.png">
+									</div>
+									<span class="username">kermitfrog123</span>
+								</td>
+								<td class="date">
+									<span>Feb 15, 2023</span>
+								</td>
+								<td class="company">
+									<div class="company-picture">
+										<img src="img/figma.png">
+									</div>
+									<span>Figma</span>
+								</td>
+								<td class="offer">
+									<span>$3.500</span>
+								</td>
+								<td class="meeting gree">
+									<span>Scheduled</span>
+								</td>
+								<td class="buttons">
+									<button>View</button>
+									<button><ion-icon name="trash-outline"></ion-icon></button>
+								</td>
+							</tr>
+							<tr>
+								<td class="name">
+									<div class="user-picture">
+										<img src="img/img.png">
+									</div>
+									<span class="username">kermitfrog123</span>
+								</td>
+								<td class="date">
+									<span>Feb 15, 2023</span>
+								</td>
+								<td class="company">
+									<div class="company-picture">
+										<img src="img/figma.png">
+									</div>
+									<span>Figma</span>
+								</td>
+								<td class="offer">
+									<span>$3.500</span>
+								</td>
+								<td class="meeting gree">
+									<span>Scheduled</span>
+								</td>
+								<td class="buttons">
+									<button>View</button>
+									<button><ion-icon name="trash-outline"></ion-icon></button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script type="text/javascript" src="js/normalize.js"></script>
+	<script type="text/javascript" src="js/admin.js"></script>
+</html>
